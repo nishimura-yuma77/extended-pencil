@@ -10,7 +10,7 @@ description: 人間との対話を通じて確定事項を積み上げ、AIの�
 ## 文書の作り方
 
 1. ユーザーの依頼、既存文書、コードから主題と現在の情報を把握する。作成先が指定されていなければ、作業中のリポジトリ内で対象に合うファイルを選ぶ。形式は依頼や対象のテンプレートに合わせ、指定がなければMarkdownにする。
-2. 対応する[テンプレート](#テンプレート)があれば、その構成と案内コメントを読み、対象に合うものだけ利用する。なければ「確定事項」「AIの推測」「検討事項」の3章を基本形とする。
+2. まず[汎用テンプレート](assets/templates/global.md)を読み、共通の記載形式を把握する。専用の[テンプレート](#テンプレート)があれば併せて読み、その構成と案内コメントを利用する。該当しなければ汎用テンプレートを使う。
 3. 人間が明示した内容だけを「確定事項」に記載する。既存文書・コードから読み取ったことは、出典を添えて「AIの推測」に置き、人間による確認を待つ。情報がない欄は事実で埋めず、省略するか未決事項にする。
 4. 決定を妨げる不明点を「検討事項」に記載する。各項目は何を決めるかが分かる質問にし、必要なら選択肢と影響を添える。文書を提示したうえで、原則として優先度の高い1件を人間に確認する。人間が複数件の確認を求めた場合はそれに従う。検討事項がなければ質問を作り足さない。
 5. 回答や新しい要件を受けたら文書を更新する。承認された内容は「確定事項」へ移し、修正・却下された推測や解決済みの検討事項を更新または除去する。同じ内容を複数の状態に残さない。確認されていない内容を、無回答や時間経過だけで確定に変えない。
@@ -19,9 +19,10 @@ description: 人間との対話を通じて確定事項を積み上げ、AIの�
 
 ## テンプレート
 
-テンプレートは成果物にコピーして編集するための雛形であり、案内コメント、プレースホルダー、未使用の節は完成文書から除く。該当する分野だけを読む。
+テンプレートは成果物にコピーして編集するための雛形であり、案内コメント、プレースホルダー、未使用の節は完成文書から除く。汎用テンプレートと該当する分野だけを読む。新しい専用テンプレートを作るときも、汎用テンプレートの3区分と推測・検討事項の列構成を基本とする。
 
-- 要件定義: [assets/templates/requirements.md](assets/templates/requirements.md)
-- DB設計: [assets/templates/database.dbml](assets/templates/database.dbml)
-- 画面設計: [assets/templates/screen.md](assets/templates/screen.md)
-- API設計: [assets/templates/api.md](assets/templates/api.md)
+- 汎用文書: [assets/templates/global.md](assets/templates/global.md)
+- 要件定義: [assets/templates/spec/requirements.md](assets/templates/spec/requirements.md)
+- DB設計: [assets/templates/spec/database.dbml](assets/templates/spec/database.dbml)
+- 画面設計: [assets/templates/spec/screen.md](assets/templates/spec/screen.md)
+- API設計: [assets/templates/spec/api.md](assets/templates/spec/api.md)
