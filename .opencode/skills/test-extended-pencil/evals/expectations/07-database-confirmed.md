@@ -11,5 +11,6 @@
 | `Table products` | `category_id bigint` が必須として定義されている。 |
 | `Ref` またはカラムの参照設定 | `products.category_id` が `categories.id` を参照する。 |
 | Project Note → 検討事項 | カテゴリ削除時の商品側の扱いが未決で、人間に判断を求める質問がある。 |
+| Project Note → 検討事項 | 「タイトル・内容・関連項目・判断してほしいこと」の表に削除時の論点を記載する。 |
 | DBMLの有効な構造定義 | 未確認の `delete: cascade` や `delete: restrict` など、削除時の動作を確定していない。 |
 | 対話 | 質問は原則1件で、カテゴリ削除時の扱いを具体的に尋ねる。 |

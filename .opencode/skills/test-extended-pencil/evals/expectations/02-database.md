@@ -10,6 +10,8 @@
 | Project Note → AIの推測 | 旧SQLを出典として、`members.id` と `orders.id` が `BIGINT PRIMARY KEY` であることが読み取れるが、採用未確認だと分かる。 |
 | Project Note → AIの推測 | 旧SQLを出典として、`members.email` が `VARCHAR(255) NOT NULL UNIQUE` であることが読み取れるが、採用未確認だと分かる。 |
 | Project Note → AIの推測 | 旧SQLを出典として、`orders.member_id` が `BIGINT NOT NULL` で `members(id)` を参照することが読み取れるが、採用未確認だと分かる。 |
+| Project Note → AIの推測 | 「タイトル・内容・関連項目」の表に推測を記載し、内容に旧SQLという出典と現行採用が未確認である旨がある。 |
 | DBMLの有効な構造定義 | 未確認の旧SQL由来のテーブル名、カラム名、型、キー、一意制約、外部キーを `Table`・`Ref` として記載していない。 |
 | Project Note → 検討事項 | 旧SQLの構造を現行設計に採用するか、人間が判断できる論点がある。 |
+| Project Note → 検討事項 | 「タイトル・内容・関連項目・判断してほしいこと」の表で旧SQLの採用判断を尋ねる。 |
 | 対話 | 質問は原則1件で、旧SQLの採用判断など具体的な未決事項を尋ねる。 |
